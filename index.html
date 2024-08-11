@@ -32,7 +32,7 @@
             return this.origin.code.apply(this, arguments);
           },
           image: function (href, title) {
-            href = href.startsWith('/images/') ? href.slice(1) : href;
+            href = href.startsWith('/') ? href.slice(1) : href;
             return (
               '<img src="' + href + '" data-origin="' + href + '" alt="' + title + '">'
             );
