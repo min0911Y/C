@@ -18,9 +18,7 @@
       name: 'Mdr-C-Tutorial',
       namelink: '/总纲.md',
       repo: 'Mdr-C-Tutorial/C',
-      alias: {
-        '/images/(.*)': 'https://Mdr-C-Tutorial/C/images/$1'
-      },
+      //alias: {},
       markdown: {
         renderer: {
           code: function (code, lang) {
@@ -31,6 +29,9 @@
             }
             return this.origin.code.apply(this, arguments);
           },
+          image: function(href, title) {
+            return ('<img src="' + href + '" data-origin="' + href + '" alt="' + title + '">');
+          }
         }
       },//mermaid
       //homepage: '/总纲.md',//主页
