@@ -29,8 +29,10 @@
             }
             return this.origin.code.apply(this, arguments);
           },
-          image: function(href, title) {
-            return ('<img src="' + href + '" data-origin="' + href + '" alt="' + title + '">');
+          image: function (href, title) {
+            return (
+              '<img src="C/' + href + '" data-origin="C/' + href + '" alt="' + title + '">'
+            );
           }
         }
       },//mermaid
