@@ -1,3 +1,4 @@
-- [总纲](/总纲.md)
+- [总纲](/教程/总纲.md)
+- [路线](/教程/路线.md)
 - [README](/README.md)
 - [About](/About.md)
