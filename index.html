@@ -31,7 +31,6 @@
           },
           image: function (href, title) {
             href = href.startsWith('/images/') ? href.slice(1) : href;
-            title = title.includes('null') ? '' : title;
             return (
               '<img src="' + href + '" data-origin="' + href + '" alt="' + title + '">'
             );
